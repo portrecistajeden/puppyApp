@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">        
         <body className={roboto.className}>
             <Nav/>
+            <div>
             {children}
+            </div>
         </body>
     </html>
   )
