@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         
         <Image 
-            className="absolute bottom-0 right-0"
+            className="absolute bottom-0 right-0 contrast-75"
             src={dogPic} 
             width={'50vh'}
             height={'50vh'}
