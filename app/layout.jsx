@@ -1,8 +1,9 @@
+import Footer from './footer';
 import './globals.css'
 import Nav from './nav'
-import {Roboto} from 'next/font/google';
+import {Playfair_Display} from 'next/font/google';
 
-const roboto = Roboto({
+const playfairDisplay = Playfair_Display({
     weight: ['400', '700'],
     subsets: ['latin']
 })
@@ -15,11 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">        
-        <body className={roboto.className}>
+        <body className={`${playfairDisplay.className}`}>
             <Nav/>
             <div>
             {children}
             </div>
+            {/* <Footer/> */}
         </body>
     </html>
   )
